@@ -7,9 +7,11 @@
 # }
 
 def select_winner(passengers)
+  winner = ""
   passengers.each {|key, value|
-    if key == "suite_a" && value[0] == "A"
-      puts passengers[:suite_a]
+    if key == :suite_a && value[0] == "A"
+      winner = value
     end
   }
+  winner
 end
